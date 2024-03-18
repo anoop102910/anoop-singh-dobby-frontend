@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useToggle from "../../../hooks/useToggle";
 import { useAuthContext } from "../../../context/AuthContext";
 import { api } from "../../../util/api";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 function Signin() {
   const [formData, setFormData] = useState({
@@ -108,7 +108,7 @@ function Signin() {
       <div className="w-[50%] h-screen">
         <img
           className="w-full h-full object-cover object-center"
-          src="./uploads/image2.jpg"
+          src="/signin.jpg"
           alt=""
         />
       </div>

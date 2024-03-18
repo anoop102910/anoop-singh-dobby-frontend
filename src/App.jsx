@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route, useSearchParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import ProtectedLayout from "./app/protected/layout";
 import Home from "./app/protected/home/page";
 import AuthLayout from "./app/auth/layout";
 import Layout from "./layout";
 import Upload from "./app/protected/upload/page";
-import Signup from "./app/auth/singup/page";
+import Signup from "./app/auth/signup/page";
 import Signin from "./app/auth/signin/page";
-import { AuthProvider, useAuthContext } from "./context/AuthContext";
+import { useAuthContext } from "./context/AuthContext";
 import { useEffect } from "react";
-import { ToastContainer } from "react-toastify";
+import {Toaster} from "react-hot-toast"
 
 function App() {
   const { login } = useAuthContext();
@@ -33,6 +33,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <Toaster/>
     </>
   );
 }

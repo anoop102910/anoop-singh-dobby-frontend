@@ -159,7 +159,7 @@ function Signup() {
       <div className="w-[50%] h-screen max-sm:hidden">
         <img
           className="w-full h-full object-cover object-center"
-          src="./uploads/image2.jpg"
+          src="./signin.jpg"
           alt=""
         />
       </div>

@@ -11,10 +11,6 @@ function Home() {
   const images = imageData?.images;
   const navigate = useNavigate();
 
-  useEffect(() => {
-    toast.success("i");
-  }, []);
-
   if (isLoading) return <div className="text-center mt-10 text-3xl text-slate-300">Loading...</div>;
   if (error) return <div className="text-center mt-10 text-3xl bg-slate-300">{error}</div>;
 
